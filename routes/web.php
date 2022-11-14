@@ -96,6 +96,8 @@ Route::get('register', [UserLoginController::class, 'register']);
 Route::post('register', [UserLoginController::class, 'create']);
 
 #login
+Route::get('login', [UserLoginController::class, 'login']);
+Route::post('login', [UserLoginController::class, 'create']);
 
 
 #login google
