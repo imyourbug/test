@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body,
+.main-menu>li>a,
+html {
+    font-family: 'Roboto', sans-serif !important;
+}
+.user-name{
+    color: #000;
+    font-size: 16px;
+}
+.user-name:hover{
+    cursor: pointer;
+}
+.search:focus {
+    border-bottom: 1px solid #0c84ff;
+}
+
+.boder-rd {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.search {
+    position: relative;
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+}
+
+.search:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #017f70;
+    transform: scaleX(0);
+    transform-origin: center;
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.search:focus-within::before {
+    transform: scale(1);
+}
+
+.search input,
+.search button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #8e8e8e;
+}
+
+.input-search {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-search {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: color .25s;
+}
+
+.btn-search:hover {
+    color: #0170f0;
+}
+
+.dropdown-logout{
+    max-width: 260px;
+    min-width: 160px;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.pagination1 {
+    display: inline-block;
+}
+
+.pagination1 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+.pagination1 a.active1 {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination1 a:hover:not(.active1) {
+    background-color: #ddd;
+}
